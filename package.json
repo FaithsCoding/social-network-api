@@ -1,0 +1,25 @@
+{
+  "name": "hw18-social-network-api",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/FaithsCoding/social-network-api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/FaithsCoding/social-network-api/issues"
+  },
+  "homepage": "https://https://github.com/FaithsCoding/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  }
+}
