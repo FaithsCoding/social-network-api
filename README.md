@@ -17,7 +17,7 @@ I have built a back end application which creates a social network api. This app
 
 ## Installation
 
-In order to run this application you will need to have installed VS Code, cloned down the repo, used node (npm i) to install all dependencies and have access to Insomnia to test the application.
+In order to run this application you will need to have installed VS Code, cloned down the repo, used node (npm i) to install all dependencies and have access to Insomnia to test the application. You will also need to run node server.js to start the application.
 
 ## Usage
 
