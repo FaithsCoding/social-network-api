@@ -142,16 +142,26 @@ const thoughtController = {
       })
       .catch((err) => res.json(err));
   },
-  //removes a reaction
-  removeReaction({ params }, res) {
+// removes a reaction
+removeReaction({ params }, res) {
+    console.log("Received params:", params);
+  
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $pull: { reactions: { reactionId: params.reactionId } } },
       { new: true }
     )
-      .then((dbThoughtData) => res.json(dbThoughtData))
-      .catch((err) => res.josn(err));
-  },
-};
+      .then((dbThoughtData) => {
+        console.log("Deleted reaction successfully!");
+        console.log("Updated thought data:", dbThoughtData);
+        res.json(dbThoughtData);
+      })
+      .catch((err) => {
+        console.log("Error occurred while deleting reaction:", err);
+        res.json(err);
+      });
+  }
+}
+  
 
 module.exports = thoughtController;
